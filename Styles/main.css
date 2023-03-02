@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap'); */
+
+@font-face {
+    font-family: Custom_Baskerville;
+    src: url(../Fonts/BaskervilleBT.ttf);
+}
 
 :root{
     --custom_grey: #353535;
@@ -14,11 +20,16 @@
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     color: black;
+    border-radius: 0px;
 }
 
 html{
     overflow-x: hidden;
     scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
 }
 
 button{
@@ -31,35 +42,21 @@ button{
     box-shadow: 4px;
 }
 
-body>div{
+/* body>div{
     padding: 0px 140px;
-}
-
-.hero_search{
-    margin-top: 24px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 48px;
-    justify-content: left;
-}
-
-.hero_search *{
-    padding: 12px 0 12px 26px;
-    font-size: 24px;
-    border-radius: 4px;
-    height: fit-content;
-    width: 420px;
-    text-align: left;
-    
-}
+} */
 
 .div_title{
     padding: 100px 140px 100px 140px;
     font-size: 48px;
     font-weight:normal;
+    font-family: "Custom_Baskerville";
 }
 
+/* nav bar */
+
 .navbar{
+    padding: 0 140px;
     background-color: var(--custom_grey);
     height: 140px;
     display: flex;
@@ -82,6 +79,71 @@ body>div{
     font-size: 24px;
 }
 
+
+/* Hero*/
+
+.hero_container{
+    position: relative;
+}
+
+.hero_content_container{
+    height: auto;
+}
+
+.intro_img {
+    position: relative;
+}
+
+.intro_img img{
+    width: 100%;
+}
+
+.intro_text{
+    
+    padding: 100px 140px 18px 140px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(53, 53, 53, 0) 0%, #353535 70.33%);
+}
+
+.intro_text h2{
+    font-family: "Custom_Baskerville";
+    color: white;
+    font-size: 65px;
+    margin-bottom: 12px;
+}
+
+.intro_text h4{
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    max-width: 550px;
+}
+
+/* Search */
+
+.search{
+    background-color: var(--custom_grey);
+    padding: 24px 140px 80px 140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+    justify-content: left;
+}
+
+.search *{
+    padding: 12px 0 12px 26px;
+    font-size: 24px;
+    border-radius: 4px;
+    height: fit-content;
+    width: 420px;
+    text-align: left;   
+}
+
+
+/* Our Fleet */
+
 .fleet_marquee{
     padding: 0px;
     background-color: var(--custom_light_grey);
@@ -98,6 +160,8 @@ body>div{
     margin-right: 100px;
 }
 
+/* Book Cars */
+
 .book_cars_container{
     margin: 100px 200px;
     display: flex;
@@ -106,11 +170,13 @@ body>div{
     gap: 160px;
 }
 
+
 .book_cars_container img{
     height: 300px;
 }
 
 .book_cars_container h2{
+    font-family: "Custom_Baskerville";
     font-size: 48px;
     margin-bottom: 40px;
 }
@@ -119,6 +185,8 @@ body>div{
     font-size: 28px;
     padding: 18px 100px;
 }
+
+/* number of deals */
 
 .how_many_deals{
     margin: 100px 140px 0 140px;
@@ -137,6 +205,10 @@ body>div{
     align-items: center;
 }
 
+.deals_text_container *{
+    font-family: "Custom_Baskerville";
+}
+
 .how_many_deals h2{
     font-weight: normal;
     color: white;
@@ -149,10 +221,11 @@ body>div{
     font-size: 24px;
 }
 
+/* how it works */
+
 .how_it_works{
     background-color: var(--custom_light_grey);
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 140px;
 }
 
 .process_container{
@@ -185,9 +258,12 @@ body>div{
     font-size: 20px;
 }
 
+/* Our Services */
+
 .our_services{
     display: flex;
     justify-content: space-around;
+    padding: 0 140px;
 }
 
 .our_services h2{
@@ -222,10 +298,44 @@ body>div{
     max-width: 420px;
 }
 
+/* About us */
+.about_us{
+    
+    background: var(--custom_grey);
+    margin: 60px 140px 0px 140px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px black;
+    height: 550px;
+}
+.aboutus_img_title{
+    display: flex;
+}
+.clips{
+    border-radius: 60%;
+}
+.Owner_name{
+    font-size: 80px;
+    font-family: "Custom_Baskerville";
+   font-weight: 200;
+}
+
+
+/* Trusted By */
+
 .trusted_by{
     height: 160px;
     background-color: var(--custom_light_grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.trusted_by img{
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Testimonials */
 
 .testimonials{
     background-color: var(--custom_light_grey);
@@ -251,11 +361,39 @@ body>div{
 .review{
     margin-top: 50px;
     display: flex;
+    gap: 40px;
 }
 
-.text_img>p{
-    font-size: 24px;
+.testimonial_car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.testimonial_name_img{
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+}
+
+.testimonial_name{
+    margin-top: 10px;
+}
+
+.testimonial_name h2{
+
+}
+
+.testimonial_name h4{
+    
+}
+
+.text_img p{
+    font-size: 24px;
+    max-width: 420px;
+}
+
+/* footer */
 
 footer{
     background-color: black;
