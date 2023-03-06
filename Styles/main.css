@@ -101,7 +101,7 @@ button:active{
 
 /* Hero*/
 
-.hero_container{
+/* .hero_container{
     position: relative;
 }
 
@@ -161,7 +161,7 @@ button:active{
     height: fit-content;
     width: 420px;
     text-align: left;   
-}
+} */
 
 
 /* Our Fleet */
@@ -253,8 +253,7 @@ button:active{
 
 .process_container{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0;
     background-color: white;
     border-radius: 12px;
     display: flex;
@@ -273,13 +272,13 @@ button:active{
 }
 
 .process_step h4{
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 24px;
 }
 
 .process_step p{
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* Our Services */
@@ -523,6 +522,33 @@ footer hr{
         width: 300px;
     }
 
+    .process_step{
+        max-width: 250px;
+    }
+
+    .process_step img{
+        height: 100px;
+    }
+
+    .process_step h4{
+        font-size: 22px;
+    }
+
+    .process_step p{
+        font-size: 14px;
+    }
+
+    .our_services img{
+        width: 320px;
+    }
+
+    .our_services h2{
+        font-size: 30px;
+    }
+
+    .our_services h4{
+        font-size: 14px;
+    }
 
     .about_us_title h2{
         font-size: 64px;
@@ -533,6 +559,469 @@ footer hr{
     }
 }
 
-@media screen and (max-width:1000px){
+/* Media Queries */
+@media screen and (max-width:580px){
+
+    button{
+        font-size: 10px;
+    }
+
+    .div_title{
+        padding: 32px 20px;
+        font-size: 32px;
+        font-weight:100;
+        font-family: "Custom_Baskerville";
+        align-content: center;
+    }
     
+    /* nav bar */
+    
+    .navbar{
+        padding: 0 20px;
+        background-color: var(--custom_grey);
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar img{
+        height: 80px;
+    }
+    
+    .nav_link_container{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    
+    .nav_link_container a{
+        color: white;
+        font-size: 22px;
+    }
+    
+    
+    /* Hero*/
+    
+    .hero_container{
+
+    }
+    
+    .hero_content_container{
+
+    }
+    
+    .intro_img {
+        display: flex;
+        justify-content: center;
+        padding-right:100px;
+        position: relative;
+    }
+    
+    .intro_img img{
+        height: 350px;
+    }
+    
+    .intro_text{
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(53, 53, 53, 0) 0%, #353535 70.33%);
+    }
+    
+    .intro_text h2{
+
+    }
+    
+    .intro_text h4{
+
+    }
+    
+    /* Search */
+    
+    .search{
+        background-color: var(--custom_grey);
+        padding: 48px 21px 25px 21px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 33px;
+        justify-content: left;
+    }
+    
+    .search *{
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+        padding: 12px 0 12px 24px;
+        font-size: 18px;
+        border-radius: 4px;
+        height: fit-content;
+        max-width: 460px;
+        text-align: left;   
+    }
+    
+    /* Our Fleet */
+    
+    .fleet_marquee{
+        padding: 0px;
+        background-color: var(--custom_light_grey);
+        height: 120px;
+        vertical-align: center;
+    }
+    
+    .fleet_marquee marquee{
+        vertical-align: center;
+    }
+    
+    .fleet_marquee marquee img{
+        width: 60px;
+        margin-top: 10px;
+        margin-right: 60px;
+    }
+    
+    /* Book Cars */
+    
+    .book_cars_container{
+        margin: 40px 21px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        justify-content: space-evenly;
+        gap: 26px;
+    }
+    
+    .book_cars_container img{
+        width: 85%;
+        height: auto;
+    }
+    
+    .book_cars_container h2{
+        font-family: "Custom_Baskerville";
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    
+    .book_cars_container button{
+        font-size: 18px;
+        padding: 12px 66px;
+    }
+    
+    /* number of deals */
+    
+    .how_many_deals{
+        margin: 40px 21px 0 21px;
+        padding: 20px 0px;
+        background-color: var(--custom_grey);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        border-radius: 12px;
+    }
+    
+    .deals_text_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .deals_text_container *{
+        font-family: "Custom_Baskerville";
+    }
+    
+    .how_many_deals h2{
+        font-weight: normal;
+        color: white;
+        font-size: 40px;
+    }
+    
+    .how_many_deals h4{
+        font-weight: normal;
+        color: white;
+        font-size: 16px;
+    }
+    
+    /* how it works */
+    
+    .how_it_works{
+        filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+        background-color: var(--custom_light_grey);
+        padding: 25px 21px;
+    }
+    
+    .process_container{
+        filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+        padding: 24px 16px;
+        background-color: white;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    
+    .process_step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: fit-content;
+    }
+    
+    .process_step img{
+        height: 72px;
+    }
+    
+    .process_step h4{
+        font-size: 22px;
+    }
+    
+    .process_step p{
+        width: fit-content;
+        font-weight: 600;
+        text-align: center;
+        font-size: 14px;
+    }
+    
+    /* Our Services */
+    
+    .our_services{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 0 21px;
+    }
+    
+    .our_services h2{
+        font-size: 24px;
+    }
+    
+    .our_services p{
+        font-size: 12px;
+        padding-top: 12px;
+    }
+    
+    .our_services img{
+        transform: rotate(90deg);
+    }
+
+    .service_1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 26px;
+    }
+    
+    .service_2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px;
+        text-align: right;
+    }
+    
+    .each_service_1{
+        max-width: 420px;
+    }
+    
+    .each_service_2{
+        max-width: 420px;
+    }
+    
+    /* about us */
+    
+    .about_us{
+        padding: 0 21px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about_us_container{
+        padding: 32px 16px;
+        border-radius: 16px;
+        display: flex;
+        width:fit-content;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 24px;
+        background-color: var(--custom_grey);
+    }
+    
+    .about_us_img_title{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: auto;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .about_us_line img{
+        width: 6px;
+    }
+    
+    .about_us_title h2{
+        font-family: "Custom_Baskerville";
+        font-size: 36px;
+        color: white;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .about_us_title h4{
+        color: white;
+        font-style: italic;
+        font-size: 20px;
+        font-weight: 300;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .about_us_img img{
+        border-radius: 100%;
+        max-width: 140px;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .about_us_text{
+        max-width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    .about_us_text h3{
+        color: white;
+        font-size: 22px;
+    }
+    
+    .about_us_text p{
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+    }
+    
+    
+    /* Trusted By */
+    
+    .trusted_by{
+        height: 110px;
+        background-color: var(--custom_light_grey);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .trusted_by img{
+        width: 28%;
+    }
+    
+    /* Testimonials */
+    
+    .testimonials{
+        background-color: var(--custom_light_grey);
+        padding: 31px;
+        display: flex;
+        justify-content: center;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .review_container{
+        padding: 50px;
+        background-color: white;
+        border-radius: 16px;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    }
+    
+    .review_container>img{
+        width: 100px;
+    }
+    
+    .review{
+        margin-top: 50px;
+        display: flex;
+        gap: 40px;
+    }
+    
+    .testimonial_car{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .testimonial_name_img{
+        margin-top: 40px;
+        display: flex;
+        gap: 25px;
+    }
+    
+    .testimonial_name{
+        margin-top: 10px;
+    }
+    
+    
+    .testimonial_name h4{
+        font-style: italic;
+        font-weight: 300;
+    }
+    
+    .text_img p{
+        font-size: 22px;
+        max-width: 420px;
+    }
+    
+    /* footer */
+    
+    footer{
+        margin-top: 100px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 150px;
+    }
+    
+    footer *{
+        color: white;
+    }
+    
+    footer>*{
+        margin-top: 60px;
+    }
+    
+    footer hr{
+        width: 80%;
+    }
+    
+    .footer_text{
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        align-items: center;
+    }
+    
+    .footer_text a{
+        font-size: 16px;
+    }
+    
+    .footer_copyright{
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }
+    
+    .footer_copyright p{
+        margin-right: 2px;
+        font-size: 12px;
+    }
+    
+    .copyright_content{
+        display: flex;
+        gap: 8px;
+    }
+
+
+
 }
