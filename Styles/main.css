@@ -99,13 +99,13 @@ button:active{
 }
 
 
-/* Hero*/
+/* Intro*/
 
-/* .hero_container{
+/* .intro_container{
     position: relative;
 }
 
-.hero_content_container{
+.intro_container{
     height: auto;
 }
 
@@ -118,7 +118,6 @@ button:active{
 }
 
 .intro_text{
-    
     padding: 100px 140px 18px 140px;
     width: 100%;
     position: absolute;
@@ -191,7 +190,6 @@ button:active{
     justify-content: space-evenly;
     gap: 160px;
 }
-
 
 .book_cars_container img{
     height: 280px;
@@ -272,6 +270,7 @@ button:active{
 }
 
 .process_step h4{
+    font-weight: 400;
     font-size: 26px;
     margin-bottom: 24px;
 }
@@ -296,6 +295,11 @@ button:active{
 .our_services p{
     font-size: 16px;
     padding-top: 12px;
+}
+
+.our_service_img img{
+    margin: 20px 0;
+    content : url("../Assets/car_our_service.png");
 }
 
 .service_1{
@@ -451,10 +455,6 @@ button:active{
     margin-top: 10px;
 }
 
-.testimonial_name h2{
-
-}
-
 .testimonial_name h4{
     font-style: italic;
     font-weight: 300;
@@ -493,6 +493,19 @@ footer hr{
     justify-content: center;
     gap: 50px;
     align-items: center;
+}
+
+.footer_text_1{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer_text_2{
+    display: flex;
+    justify-content: center;
+    gap:20px;
 }
 
 .footer_text a{
@@ -538,7 +551,7 @@ footer hr{
         font-size: 14px;
     }
 
-    .our_services img{
+    .our_service_img img{
         width: 320px;
     }
 
@@ -590,7 +603,7 @@ footer hr{
     }
     
     .navbar img{
-        height: 50px;
+        height: 55px;
     }
     
     .nav_link_container{
@@ -603,28 +616,31 @@ footer hr{
         color: white;
         font-size: 22px;
     }
-    
-    
-    /* Hero*/
-    
-    .hero_container{
-        position: relative;
-    }
-    
-    .hero_content_container{
 
+    .navbar a.icon {
+        background: black;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+    
+    /* Intro*/
+    
+    .intro_container{
+        position: relative;
     }
     
     .intro_img {
         display: flex;
         justify-content: center;
         position: relative;
-        padding-bottom: 28px;
+        padding-bottom: 25px;
         align-content: center;
     }
     
     .intro_img img{
-        width: 160%;
+        width: 165%;
     }
     
     .intro_text{
@@ -680,15 +696,18 @@ footer hr{
     .fleet_marquee{
         padding: 0px;
         background-color: var(--custom_light_grey);
-        height: 100px;
-        vertical-align: center;
+        height: 80px;
+
     }
     
     .fleet_marquee marquee{
-        vertical-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .fleet_marquee marquee img{
+        align-self: center;
         width: 60px;
         margin-top: 0px;
         margin-right: 60px;
@@ -813,6 +832,11 @@ footer hr{
         flex-direction: column;
         padding: 0 21px;
     }
+
+    .our_service_img img{
+        content: url(../Assets/car_our_service_rotated.png);
+        width: 100%;
+    }
     
     .our_services h2{
         font-size: 24px;
@@ -823,25 +847,30 @@ footer hr{
         padding-top: 12px;
     }
     
-    .our_services img{
-        transform: rotate(90deg);
-    }
 
     .service_1{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 26px;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .our_services h2{
+        text-align: center;
     }
     
     .service_2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 60px;
-        text-align: right;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
     }
     
+
+
     .each_service_1{
         max-width: 420px;
     }
@@ -927,7 +956,7 @@ footer hr{
     /* Trusted By */
     
     .trusted_by{
-        height: 100px;
+        height: 80px;
         background-color: var(--custom_light_grey);
         display: flex;
         justify-content: center;
@@ -935,21 +964,21 @@ footer hr{
     }
     
     .trusted_by img{
-        width: 25%;
+        width: 20%;
     }
     
     /* Testimonials */
     
     .testimonials{
         background-color: var(--custom_light_grey);
-        padding: 31px;
+        padding: 21px;
         display: flex;
         justify-content: center;
         filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
     }
     
     .review_container{
-        padding: 50px;
+        padding: 20px;
         background-color: white;
         border-radius: 16px;
         width: fit-content;
@@ -964,27 +993,29 @@ footer hr{
     }
     
     .review{
-        margin-top: 50px;
+        margin-top: 20px;
         display: flex;
         justify-content: center;
         flex-direction: column;
-        gap: 40px;
+        gap: 20px;
     }
     
     .testimonial_car{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .testimonial_car img{
-        width: 100%;
+        width: 85%;
     }
     
     .testimonial_name_img{
-        margin-top: 40px;
+        margin-top: 20px;
         display: flex;
-        gap: 25px;
+        gap: 20px;
+        justify-content: center;
     }
 
     .testimonial_name_img img{
@@ -1019,12 +1050,16 @@ footer hr{
     /* footer */
     
     footer{
-        margin-top: 100px;
+        margin-top: 30px;
         background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 150px;
+        padding-bottom: 30px;
+    }
+
+    footer>img{
+        width: 100px;
     }
     
     footer *{
@@ -1032,7 +1067,7 @@ footer hr{
     }
     
     footer>*{
-        margin-top: 60px;
+        margin-top: 36px;
     }
     
     footer hr{
@@ -1042,12 +1077,28 @@ footer hr{
     .footer_text{
         display: flex;
         justify-content: center;
-        gap: 50px;
+        gap: 36px;
+        align-items: center;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    
+    .footer_text_1{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-direction: column;
         align-items: center;
     }
     
+    .footer_text_2{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+    }
+    
     .footer_text a{
-        font-size: 16px;
+        font-size: 12px;
     }
     
     .footer_copyright{
@@ -1058,14 +1109,11 @@ footer hr{
     
     .footer_copyright p{
         margin-right: 2px;
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .copyright_content{
         display: flex;
         gap: 8px;
     }
-
-
-
 }

@@ -1,17 +1,8 @@
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    loop: true,
-  
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  
-  });
-  
+function myFunction() {
+  var x = document.getElementById("nav_links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
