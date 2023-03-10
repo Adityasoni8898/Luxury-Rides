@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: Custom_Baskerville;
-    src: url(../Fonts/baskvl\ 2.ttf);
+    src: url(../Fonts/BaskervilleBT.ttf);
 }
 
 :root{
@@ -38,7 +38,12 @@ button{
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 20px;
+    border: none;
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+input{
+    border: none;
 }
 
 button:hover{
@@ -122,7 +127,6 @@ button:active{
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: var(--custom_sandal);
-
 }
 
 
@@ -196,18 +200,22 @@ button:active{
 .fleet_marquee{
     padding: 0px;
     background-color: var(--custom_light_grey);
-    height: 130px;
+    height:fit-content;
     vertical-align: center;
 }
 
 .fleet_marquee marquee{
+    
     background-color: var(--custom_light_grey);
     vertical-align: center;
 }
 
-.fleet_marquee marquee img{
-    margin-top: 30px;
-    margin-right: 100px;
+.fleet_img_container{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 /* Book Cars */
@@ -690,7 +698,7 @@ footer hr{
     }
 
     .nav_link_container a{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .nav_link_container.active{
@@ -722,6 +730,7 @@ footer hr{
         bottom: 0;
         padding: 0 21px;
         width: 100%;
+        
         /* display: flex;
         justify-content: center;
         flex-direction: column; */
@@ -732,6 +741,7 @@ footer hr{
         filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
         font-family: "Custom_Baskerville";
         color: white;
+        stroke: 1px solid rgba(0, 0, 0, 0.3);
         font-size: 34px;
         margin-bottom: 12px;
     }
@@ -751,7 +761,7 @@ footer hr{
         padding: 25px 21px;
         display: flex;
         flex-wrap: wrap;
-        gap: 12px;
+        gap: 15px;
         justify-content: left;
     }
     
@@ -770,21 +780,25 @@ footer hr{
     .fleet_marquee{
         padding: 0px;
         background-color: var(--custom_light_grey);
-        height: 80px;
-
+        height:fit-content;
+        vertical-align: center;
     }
     
     .fleet_marquee marquee{
+        background-color: var(--custom_light_grey);
+        vertical-align: center;
+    }
+    
+    .fleet_img_container{
+        height: 80px;
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: 20px;
     }
-    
-    .fleet_marquee marquee img{
-        align-self: center;
-        width: 60px;
-        margin-top: 0px;
-        margin-right: 60px;
+
+    .fleet_img_container img{
+        width: 45px;
     }
     
     /* Book Cars */
