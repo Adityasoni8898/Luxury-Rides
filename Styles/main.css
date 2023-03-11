@@ -685,7 +685,7 @@ footer hr{
     }
 
     .nav_link_container{
-        position:absolute;
+        position:fixed;
         right: -100%;
         top: 70px;
         flex-direction: column;
