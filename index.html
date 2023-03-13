@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luxury Rides</title>
     <link rel="stylesheet" href="Styles/main.css">
+    <script src="Scripts/hamburger.js" defer></script>
+    <script src="Scripts/slider.js" defer></script>
+
 </head>
 <body>
 
@@ -69,16 +72,82 @@
     </div>
 
 
-    <div class="book_cars">
+    <!-- <div class="book_cars carousel" data-carousel>
+        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+        <div data-slides>
 
-        <div class="book_cars_container">
-            <img src="Assets/audi.png" alt="audio_image">
-            <div class="book_car_name_btn">
-                <h2>Audi A3 Cabriolet</h2>
-                <button>Book</button>
+            <div class="slide" data-active>
+                <div class="book_cars_container">
+                    <img src="Assets/audi.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A1 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
             </div>
+            
+            <div class="slide">
+                <div class="book_cars_container">
+                    <img src="Assets/audi.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A2 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slide">
+                <div class="book_cars_container">
+                    <img src="Assets/audi.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A3 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+            </div>
+
         </div>
-    </div>
+            
+    </div> -->
+
+
+    <section aria-label="Newest Photos">
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+          <ul data-slides>
+            <li class="slide" data-active>
+                <div class="book_cars_container">
+                    <img src="Assets/audi.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A1 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="book_cars_container">
+                    <img src="Assets/audi.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A2 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+            </li>
+            <li class="slide">
+                <div class="book_cars_container">
+                    <img src="Assets/audi.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A3 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
 
     <div class="how_many_deals">
         <div class="deals_text_container">
@@ -252,6 +321,5 @@
             <p>All Rights reserved</p>
         </div>
     </footer>
-<script src="Scripts/main.js"></script>
 </body>
 </html>

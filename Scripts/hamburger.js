@@ -1,3 +1,4 @@
+//Hamburger Menu JS
 const hamburger = document.querySelector(".hamburger");
 const nav_link_container = document.querySelector(".nav_link_container");
 
