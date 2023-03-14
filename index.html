@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="Styles/main.css">
     <script src="Scripts/hamburger.js" defer></script>
     <script src="Scripts/slider.js" defer></script>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
 
@@ -58,8 +59,7 @@
 
 
     <h2 class="div_title">Our Fleet Includes</h2>
-    <div class="fleet_marquee stroke drop_shadow">
-        <marquee behavior="slide">
+    <div class="our_fleet stroke drop_shadow">
             <div class="fleet_img_container">
                 <img src="Assets/fleet_marquee1.png" alt="bmw_logo">
                 <img src="Assets/fleet_marquee2.png" alt="mercdies_logo">
@@ -68,7 +68,6 @@
                 <img src="Assets/fleet_marquee5.png" alt="porsche_logo">
                 <img src="Assets/fleet_marquee6.png" alt="rangerover_logo">
             </div>
-        </marquee> 
     </div>
 
 
@@ -112,7 +111,7 @@
     </div> -->
 
 
-    <section aria-label="Newest Photos">
+    <!-- <section aria-label="Newest Photos">
         <div class="carousel" data-carousel>
           <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
           <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
@@ -146,7 +145,88 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
+
+      <div class="book_cars">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/porsche-panamera.png" alt="porsche-panamera">
+                    <div class="book_car_name_btn">
+                        <h2>Porsche Panamera</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/audi a3 cabriolet.png" alt="audio_a3_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi A3 Cabriolet</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/bmw 7 series.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Bmw 7 Series</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/audi q7.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Audi Q7</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/jaguar XJL.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Jaguar XJL</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/mini cooper.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Mini Cooper Convertible</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="book_cars_container">
+                    <img src="Assets/range-rover-sport.png" alt="audio_image">
+                    <div class="book_car_name_btn">
+                        <h2>Range Rover Sport</h2>
+                        <button>Book</button>
+                    </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+          </div>
+      </div>
+
 
 
     <div class="how_many_deals">
@@ -267,7 +347,23 @@
 
     <h2 class="div_title">We Are Trusted By</h2>
     <div class="trusted_by stroke drop_shadow">
-        <img src="Assets/trusted_by_1.png" alt="">
+        <div class="swiper">
+            <div class="swiper-wrapper trusted_by_img">
+              <div class="swiper-slide ">
+                <img src="Assets/red_chillis_logo.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/viacon_logo.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/dharma_logo.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="Assets/yash_raj_logo.png" alt="">
+              </div>
+            </div>
+        
+          </div>
     </div> 
 
     <h2 class="div_title">Testimonials</h2>
@@ -321,5 +417,31 @@
             <p>All Rights reserved</p>
         </div>
     </footer>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+
+    autoplay: {
+        delay:4000,
+        disableOnInteraction: true,
+    },
+    
+  // Optional parameters
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: "true",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+
 </body>
 </html>

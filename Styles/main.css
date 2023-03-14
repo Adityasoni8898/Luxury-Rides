@@ -3,7 +3,13 @@
 
 @font-face {
     font-family: Custom_Baskerville;
-    src: url(../Fonts/BaskervilleBT.ttf);
+    /* src: url(../Assets/Libre-Bodoni-master/fonts/TTF/LibreBodoni-Bold.ttf); */
+    src: url("../Fonts/BaskervilleBT.ttf");
+}
+
+@font-face {
+    font-family: Custom_goldoni;
+    src: url("../Assets/goldoni/Goldoni_DEMO.otf");
 }
 
 :root{
@@ -158,8 +164,8 @@ button:active{
 }
 
 .intro_text h2{
-    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
-    font-family: "Custom_Baskerville";
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.6));
+    font-family: "Custom_goldoni";
     color: white;
     font-size: 62px;
     margin-bottom: 12px;
@@ -197,19 +203,17 @@ button:active{
 
 /* Our Fleet */
 
-.fleet_marquee{
+.our_fleet{
     padding: 0px;
     background-color: var(--custom_light_grey);
     height:fit-content;
     vertical-align: center;
-}
-
-.fleet_marquee marquee{
-    background-color: var(--custom_light_grey);
     vertical-align: center;
 }
 
+
 .fleet_img_container{
+    background-color: var(--custom_light_grey);
     height: 130px;
     display: flex;
     justify-content: center;
@@ -219,7 +223,7 @@ button:active{
 
 /* Book Cars */
 
-.carousel {
+/* .carousel {
     width: 100vw;
     height: 420px;
     position: relative;
@@ -284,7 +288,23 @@ button:active{
   
   .carousel-button.next {
     right: 4rem;
-  }
+  } */
+
+
+.swiper{
+    margin: 40px 0;
+    height: fit-content;
+
+}
+.swiper-slide{
+    width: 100%;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next{
+    padding: 0 140px;
+    color: var(--custom_grey);
+}
 
 .book_cars_container{
     margin: 100px 200px;
@@ -295,18 +315,20 @@ button:active{
 }
 
 .book_cars_container img{
-    height: 280px;
+    width: 530px;
+    max-height: 280px;
 }
 
 .book_cars_container h2{
-    font-family: "Custom_Baskerville";
-    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
     margin-bottom: 40px;
 }
 
 .book_cars_container button{
-    font-size: 26px;
-    padding: 18px 100px;
+    font-size: 24px;
+    padding: 20px 100px;
 } 
 
 /* number of deals */
@@ -804,10 +826,9 @@ footer hr{
     }
     
     .intro_text h2{
-        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
-        font-family: "Custom_Baskerville";
+        filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.75));
+        font-family: "Custom_goldoni";
         color: white;
-        stroke: 1px solid rgba(0, 0, 0, 0.3);
         font-size: 34px;
         margin-bottom: 12px;
     }
@@ -843,15 +864,10 @@ footer hr{
     
     /* Our Fleet */
     
-    .fleet_marquee{
+    .our_fleet{
         padding: 0px;
         background-color: var(--custom_light_grey);
         height:fit-content;
-        vertical-align: center;
-    }
-    
-    .fleet_marquee marquee{
-        background-color: var(--custom_light_grey);
         vertical-align: center;
     }
     
@@ -860,23 +876,34 @@ footer hr{
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 20px;
+        gap: 16px;
     }
 
     .fleet_img_container img{
-        width: 45px;
+        width: 10%;
+        max-width: 50px;
     }
     
     /* Book Cars */
+
+    .swiper{
+        margin: 20px 0;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next{
+        display: none;
+    }
     
     .book_cars_container{
-        width: 75%;
+
         margin: 40px 21px;
         display: flex;
         flex-direction: column;
         align-self: center;
         justify-content: space-evenly;
         gap: 26px;
+        align-items: center;
     }
     
     .book_car_name_btn{
@@ -887,12 +914,12 @@ footer hr{
 
     .book_cars_container img{
         width: 85%;
-        height: auto;
+        height: fit-content;
     }
     
     .book_cars_container h2{
-        font-family: "Custom_Baskerville";
-        font-size: 30px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 24px;
         margin-bottom: 26px;
     }
     
@@ -1113,13 +1140,20 @@ footer hr{
     .trusted_by{
         height: 80px;
         background-color: var(--custom_light_grey);
+    }
+    
+    .trusted_by_img{
+        height: 80px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
+
     .trusted_by img{
         width: 20%;
+        max-width: fit-content;
+        max-height: 60px;
     }
     
     /* Testimonials */
