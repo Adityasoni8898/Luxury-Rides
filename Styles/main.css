@@ -503,7 +503,7 @@ button>a{
     justify-content: center;
     flex-wrap: wrap;
     max-width: 620px;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -695,6 +695,27 @@ footer hr{
 
 @media screen and (max-width:1300px){
 
+    .fleet_img_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .fleet_img_container img{
+        width: 8%;
+        max-width: 80px;
+    }
+
+
+    .trusted_by_container{
+        gap: 50px;
+    }
+
+    .trusted_by_container img{
+        max-width: 180px;
+    }
+
     .search *{
         width: 300px;
     }
@@ -727,12 +748,36 @@ footer hr{
         font-size: 14px;
     }
 
+    .about_us_line img{
+        width: 8px;
+    }
+
+    .about_us_img_title{
+        gap: 10px;
+    }
+
+    .about_us_img_title{
+        justify-content: left;
+    }
+
+    .about_us_text {
+        max-width: 420px;
+    }
+
+    .about_us_img{
+        max-width: 200px;
+    }
+
+    .about_us_img img{
+        width: 100%;
+    }
+
     .about_us_title h2{
-        font-size: 64px;
+        font-size: 46px;
     }
 
     .about_us_title h4{
-        font-size: 28px;
+        font-size: 24px;
     }
 }
 
@@ -1132,6 +1177,7 @@ footer hr{
     .about_us_line img{
         width: 6px;
     }
+    
     
     .about_us_title h2{
         font-family: "Custom_Baskerville";

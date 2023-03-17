@@ -309,3 +309,205 @@ footer hr{
     display: flex;
     gap: 8px;
 }
+
+
+/* Media Queries */
+@media screen and (max-width:768px){
+
+
+    body{
+        overflow: hidden;
+    }
+
+    button{
+        font-size: 10px;
+    }
+
+    .div_title{
+        padding: 72px 20px 36px 20px;
+        font-size: 32px;
+        font-weight:100;
+        font-family: "Custom_Baskerville";
+        align-content: center;
+    }
+    
+    /* nav bar */
+    
+    .navbar{
+        padding: 0 20px;
+        background-color: var(--custom_grey);
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .navbar img{
+        height: 55px;
+    }
+    
+    .nav_link_container{
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+        transition: 0.7s ease;
+    }
+    
+    .nav_link_container a{
+        color: white;
+        font-size: 22px;
+        
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(10px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .contact_us{
+        display: inline;
+    }
+
+    .contact_us_link{
+        display: none;
+    }
+
+    .nav_link_container{
+        position:fixed;
+        right: -100%;
+        top: 70px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 12px;
+        background-color: var(--custom_grey);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav_link_container a{
+        font-size: 16px;
+    }
+
+    .nav_link_container.active{
+        right: 0;
+        z-index: 2;
+        padding: 12px 0;
+    }
+
+
+
+    /* container */
+
+
+    .container{
+        margin: 40px 21px;
+    }
+
+    .container h2{
+        font-size: 32px;
+    }
+
+    .our_fleet{
+        padding: 0px;
+        background-color: var(--custom_light_grey);
+        height:fit-content;
+        vertical-align: center;
+    }
+    
+    .fleet_img_container{
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .fleet_img_container img{
+        width: 11%;
+        max-width: 50px;
+    }
+
+    .fleet_element{
+        width: 80%;
+    }
+
+    .fleet_element h3{
+        font-size: 24px;
+    }
+
+    .fleet_element img{
+        width: 100%;
+    }
+
+
+
+    /* footer */
+    footer{
+        margin-top: 30px;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    footer>img{
+        width: 100px;
+    }
+
+    footer>*{
+        margin-top: 36px;
+    }
+    
+    .footer_text{
+        display: flex;
+        justify-content: center;
+        gap: 36px;
+        align-items: center;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    
+    .footer_text_1{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer_text_2{
+        display: flex;
+        justify-content: center;
+        gap:40px;
+    }
+    
+    .footer_text a{
+        font-size: 12px;
+    }
+    
+    .footer_copyright{
+        display: flex;
+        justify-content: center;
+        gap: 35px;
+    }
+    
+    .footer_copyright p{
+        margin-right: 2px;
+        font-size: 10px;
+    }
+    
+    .copyright_content{
+        display: flex;
+        gap: 8px;
+    }
+}
