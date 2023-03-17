@@ -1,59 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Styles/contact_us.css">
-    <title>Contact Us</title>
-</head>
-<body>
-    <div class="navbar">
-        <img src="../Assets/logo.png" alt="logo">
-        <div id="nav_link_container" class="nav_link_container">
-            <a href="../index.html">Home</a>
-            <a href="contact_us.html" class="contact_us">Contact Us</a>
-            <a href="about_us.html">About Us</a>
-            <a href="our_fleet.html">Our Fleet</a>
-        </div>
-        </a>
-        <button class="contact_us_button"><a href="contact_us.html">Contact Us</a></button>
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </div>
-
-
-    <footer>
-        <img src="../Assets/logo.png" alt="our_logo">
-        <div class="footer_text">
-            <div class="footer_text_1">
-                <a href="#about_us">About us</a>
-                <a href="#">Contacts</a>
-                <a href="#fleet_marquee">Our Fleet</a>
-                <a href="#">Terms and conditions</a>
-                <a href="#">Refund Policy</a>
-                <a href="">Privacy Policy</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Styles/contact_us.css">
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <div class="navbar">
+            <img src="../Assets/logo.png" alt="logo">
+            <div id="nav_link_container" class="nav_link_container">
+                <a href="../index.html">Home</a>
+                <a href="contact_us.html" class="contact_us">Contact Us</a>
+                <a href="about_us.html">About Us</a>
+                <a href="our_fleet.html">Our Fleet</a>
             </div>
-            <div class="footer_text_2">
-                <a href=""><img src="../Assets/Facebook - Negative.svg" alt=""></a>
-                <a href=""><img src="../Assets/Twitter - Negative.svg" alt=""></a>
-                <a href=""><img src="../Assets/Instagram - Negative.svg" alt=""></a>
-                <a href=""><img src="../Assets/YouTube - Negative.svg" alt=""></a>
+            <a href="contact_us.html" class="contact_us_link">Contact Us</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </div>
-        <hr>
-        <div class="footer_copyright">
-            <div class="copyright_content">
-                <img src="../Assets/copyright.svg" alt="">
-                <p>2023 Luxury Rides</p>
+
+
+        <div class="container">
+            <div class="section_A">
+                <h1>Go from point A to B <br>But in Luxury.</h1>
+                <p>We provide a range of fleet of Luxury car in the city of
+                    Mumbai.<br>We'll get the car anywhere you would like to call
+                    us.</p>
             </div>
-            <p>All Rights reserved</p>
+            <div class="section_B">
+                <div class="send_message">
+                    <h2>Send us a message</h2>
+                    <p>We will respond as soon as possible</p>
+                </div>
+                <div class="contact_form">
+                    <form id="email-form" name="email-form" data-name="Email
+                        Form" method="get" aria-label="Email Form">
+                        <input type="text" class="form-field w-input"
+                            maxlength="256" name="Name" data-name="Name"
+                            placeholder="Your Name" id="Name" required="">
+                        <input type="text" class="form-field w-input"
+                            maxlength="256" name="Phone-number" data-name="Phone
+                            number" placeholder="Phone Number" id="Phone-number"
+                            required="">
+                        <select id="field-3" name="field-3" data-name="Field 3"
+                            class="form-field select-field w-select">
+                            <option value="">Select your car</option>
+                            <option value="First">BMW Z4 Convertible</option>
+                            <option value="Second">BMW 7 Series</option>
+                            <option value="Third">Audi A3 Cabriolet</option>
+                            <option value="Another option">Mini Cooper
+                                Convertible</option>
+                            <option value="Another option">Jaguar XJL</option>
+                            <option value="Another option">Audi Q7</option>
+                            <option value="Another option">Porsche Panamera</option>
+                            <option value="Another option">Mercedes S Class</option>
+                            <option value="Another option">BMW X7</option>
+                            <option value="Another option">Range Rover Sport</option>
+                        </select>
+                        <textarea placeholder="Have a message?" maxlength="5000"
+                            id="field-4" name="field-4" data-name="field"
+                            class="form-field"></textarea>
+                        <input type="submit" value="Send message"
+                            data-wait="Please wait..." class="button-5
+                            w-button"></form>
+                </div>
+                <h3>Or call us at +91 9167880007</h3>
+            </div>
         </div>
-    </footer>
+
+        <footer>
+            <img src="../Assets/logo.png" alt="our_logo">
+            <div class="footer_text">
+                <div class="footer_text_1">
+                    <a href="#about_us">About us</a>
+                    <a href="#">Contacts</a>
+                    <a href="#fleet_marquee">Our Fleet</a>
+                    <a href="#">Terms and conditions</a>
+                    <a href="#">Refund Policy</a>
+                    <a href="">Privacy Policy</a>
+                </div>
+                <div class="footer_text_2">
+                    <a href=""><img src="../Assets/Facebook - Negative.svg"
+                            alt=""></a>
+                    <a href=""><img src="../Assets/Twitter - Negative.svg"
+                            alt=""></a>
+                    <a href=""><img src="../Assets/Instagram - Negative.svg"
+                            alt=""></a>
+                    <a href=""><img src="../Assets/YouTube - Negative.svg"
+                            alt=""></a>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_copyright">
+                <div class="copyright_content">
+                    <img src="../Assets/copyright.svg" alt="">
+                    <p>2023 Luxury Rides</p>
+                </div>
+                <p>All Rights reserved</p>
+            </div>
+        </footer>
 
 
-</body>
+    </body>
 </html>

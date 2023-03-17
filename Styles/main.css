@@ -39,7 +39,6 @@ body{
 
 button{
     background-color: var(--custom_sandal);
-    color: black;
     height: fit-content;
     padding: 12px 20px;
     border-radius: 8px;
@@ -48,19 +47,35 @@ button{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+button *:hover{
+    color: white;
+}
+
 input{
     border: none;
 }
 
-button:hover{
+button:hover,
+button>a:hover{
     cursor: Pointer;
     background-color: #ffdba8;
     color: rgb(96, 173, 251);
 }
 
-button:active{
+button:active,
+button>a:active{
     color: teal;
 }
+
+button>a{
+    transition: 0.5s ease;
+}
+
 
 .stroke{
     border-width: 1px 0px;
@@ -88,7 +103,7 @@ button:active{
 .navbar{
     padding: 0 15%;
     background-color: var(--custom_grey);
-    height: 120px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,6 +129,21 @@ button:active{
 .nav_link_container a:hover{
     cursor: pointer;
     color: rgb(96, 173, 251);
+}
+
+.contact_us_link{
+    background-color: var(--custom_sandal);
+    height: fit-content;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+.contact_us_link:hover{
+    background-color: black;
+    color: white;
 }
 
 .contact_us{
@@ -214,7 +244,7 @@ button:active{
 
 .fleet_img_container{
     background-color: var(--custom_light_grey);
-    height: 130px;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -521,16 +551,25 @@ button:active{
 /* Trusted By */
 
 .trusted_by{
-    height: 15%;
+    height: fit-content;
     background-color: var(--custom_light_grey);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.trusted_by_container{
+    background-color: var(--custom_light_grey);
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
 .trusted_by img{
     width: fit-content;
-    height: fit-content;
+    height: 90px;
 }
 
 /* Testimonials */
@@ -768,7 +807,7 @@ footer hr{
         display: inline;
     }
 
-    .contact_us_button{
+    .contact_us_link{
         display: none;
     }
 
@@ -880,7 +919,7 @@ footer hr{
     }
 
     .fleet_img_container img{
-        width: 10%;
+        width: 11%;
         max-width: 50px;
     }
     
@@ -1138,22 +1177,18 @@ footer hr{
     /* Trusted By */
     
     .trusted_by{
-        height: 80px;
+        height: fit-content;
         background-color: var(--custom_light_grey);
     }
     
-    .trusted_by_img{
+    .trusted_by_container{
+        gap: 18%;
         height: 80px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
-    .trusted_by img{
-        width: 20%;
-        max-width: fit-content;
-        max-height: 60px;
+    .trusted_by_container img{
+        width: fit-content;
+        height: 30px;
     }
     
     /* Testimonials */

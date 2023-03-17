@@ -35,18 +35,27 @@ html{
 
 body{
     overflow: hidden;
+    background-color: var(--custom_light_grey);
 }
 
 
 button{
     background-color: var(--custom_sandal);
-    color: black;
     height: fit-content;
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 20px;
     border: none;
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+button *:hover{
+    color: white;
 }
 
 input{
@@ -73,12 +82,20 @@ button:active{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
+.div_title{
+    padding: 50px 10% 50px 10%;
+    font-size: 46px;
+    font-weight:normal;
+    text-align: center;
+    font-family: "Custom_Baskerville";
+}
+
 /* nav bar */
 
 .navbar{
     padding: 0 15%;
     background-color: var(--custom_grey);
-    height: 120px;
+    height: 110px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +122,21 @@ button:active{
     color: rgb(96, 173, 251);
 }
 
+.contact_us_link{
+    background-color: var(--custom_sandal);
+    height: fit-content;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+.contact_us_link:hover{
+    background-color: black;
+    color: white;
+}
+
 .contact_us{
     display: none;
 }
@@ -125,7 +157,93 @@ button:active{
 }
 
 
+/* Our Fleet */
 
+.container{
+    margin: 60px 15% 60px 15%;
+    background-color: white;
+    border-radius: 12px;
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_fleet{
+    padding: 0px;
+    background-color: var(--custom_light_grey);
+    height:fit-content;
+    width: 100%;
+    vertical-align: center;
+    vertical-align: center;
+}
+
+
+.fleet_img_container{
+    background-color: var(--custom_light_grey);
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.fleet_img_container img{
+    max-width: 10%;
+}
+
+
+
+
+
+
+.fleet_display{
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.fleet_element{
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
+    width: 30%;
+    border-radius: 8px;
+}
+
+.fleet_element img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75);
+}
+
+.fleet_element h3{
+    margin: 12px;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.fleet_element a{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--custom_grey);
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 
 
 
