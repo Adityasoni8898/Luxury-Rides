@@ -356,9 +356,12 @@ button>a{
     margin-bottom: 40px;
 }
 
-.book_cars_container button{
+.book_cars_container a{
+    background-color: var(--custom_sandal);
+    border-radius: 8px;
     font-size: 24px;
-    padding: 20px 100px;
+    padding: 18px 80px;
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 } 
 
 /* number of deals */
@@ -695,6 +698,59 @@ footer hr{
 
 @media screen and (max-width:1300px){
 
+    .navbar{
+        padding: 0 10%;
+    }
+
+    .intro_text {
+        padding: 80px 10% 18px 10%;
+    }
+
+    .search{
+        padding: 24px 10% 80px 10%;
+    }
+
+    .div_title {
+        padding: 80px 10%;
+    }
+
+    .how_many_deals {
+        margin: 80px 10% 0 10%;
+    }
+
+    .how_it_works {
+        padding: 50px 10%;
+    }
+
+    .our_services {
+        padding: 0 10%;
+    }
+
+    .about_us {
+        padding: 0 10% 0 10%;
+    }
+
+    .testimonials{
+        padding: 50px 10%;
+        margin: 0;
+    }
+
+    .contact_us_link{
+        display: none;
+    }
+
+    .contact_us{
+        display: block;
+    }
+
+    .nav_link_container{
+        gap: 40px;
+    }
+
+    .nav_link_container a{
+        font-size: 18px;
+    }
+
     .fleet_img_container{
         display: flex;
         justify-content: center;
@@ -1007,7 +1063,8 @@ footer hr{
         margin-bottom: 26px;
     }
     
-    .book_cars_container button{
+    .book_cars_container a{
+        text-align: center;
         font-size: 18px;
         padding: 12px 66px;
     }
