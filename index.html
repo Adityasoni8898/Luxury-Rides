@@ -73,12 +73,12 @@
                 <input type="submit" value="Search" data-wait="Please wait..." class="submit-button w-button">
             </form> -->
 
-            <form id="form_car_booking" data-name="Car booking" redirect="Pages/our-fleet.html">
-                <input type="name" placeholder="Name" required>
-                <input type="contact" placeholder="Contact" required>
-                <input type="email" placeholder="Email" required>
-                <input type="pickup_address" placeholder="Pick Up Address" required>
-                <input type="submit" redirect="Pages/our-fleet.html" value="Search" id="Search" class="search_btn">
+            <form id="form_car_booking" name="Car booking" method="POST" netlify-honeypot="bot-field" data-netlify="true" redirect="Pages/our-fleet.html">
+                <input type="name" placeholder="Name" name="Name" required>
+                <input type="contact" placeholder="Contact" name="Contact" required>
+                <input type="email" placeholder="Email" name="Email" required>
+                <input type="pickup_address" placeholder="Pick Up Address" name="Address" required>
+                <input type="submit" redirect="Pages/our-fleet.html" value="Submit" id="Search" class="search_btn">
             </form>
         </div>
 
