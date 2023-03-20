@@ -82,16 +82,6 @@ button:active{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
-.div_title{
-    padding: 50px 10% 50px 10%;
-    font-size: 46px;
-    font-weight:normal;
-    text-align: center;
-    font-family: "Custom_Baskerville";
-}
-
-
-
 /* Contact_number */
 .contact_number{
     padding: 10px;
@@ -104,6 +94,8 @@ button:active{
     font-size: 18px;
     font-weight: 600;
 }
+
+
 
 /* nav bar */
 
@@ -172,92 +164,40 @@ button:active{
 }
 
 
-/* Our Fleet */
+/* About_container */
 
 .container{
     margin: 60px 15% 60px 15%;
+    padding: 3%;
     background-color: white;
     border-radius: 12px;
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+}
+
+h2{
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight:normal;
+    font-family: "Custom_Baskerville";
+}
+
+.details_container {
+    margin: 20px 0;
     display: flex;
+    justify-content: left;
     flex-direction: column;
     align-items: center;
+    gap: 15px;
 }
 
-.our_fleet{
-    padding: 0px;
-    background-color: var(--custom_light_grey);
-    height:fit-content;
-    width: 100%;
-    vertical-align: center;
-    vertical-align: center;
+.details_container *{
+    color: var(--custom_grey);
 }
 
-
-.fleet_img_container{
-    background-color: var(--custom_light_grey);
-    height: 120px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8%;
-}
-
-.fleet_img_container img{
-    max-width: 10%;
-}
-
-
-
-
-
-
-.fleet_display{
-    margin: 40px 0;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: center;
-}
-
-.fleet_element{
-    margin-top: 36px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.5);
-    width: 30%;
-    border-radius: 8px;
-}
-
-.fleet_element img{
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.75);
-}
-
-.fleet_element h3{
-    margin: 12px;
-    font-size: 28px;
-    line-height: 30px;
-}
-
-.fleet_element a{
-    display: flex;
-    height: 50px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    background-color: var(--custom_grey);
-    color: white;
-    text-align: center;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+.details_container p{
+    font-size: 16px;
+    font-weight: 600;
 }
 
 
@@ -326,12 +266,15 @@ footer hr{
 }
 
 
+
 /* Media Queries */
+
 
 @media screen and (max-width:1300px){
 
     .container{
         margin: 40px 10%;
+        padding: 5vh 5%;
     }
 
     .contact_us_link{
@@ -352,7 +295,6 @@ footer hr{
 }
 
 
-
 @media screen and (max-width:768px){
 
 
@@ -365,7 +307,7 @@ footer hr{
     }
 
     .div_title{
-        padding: 20px 20px 36px 20px;
+        padding: 72px 20px 36px 20px;
         font-size: 32px;
         font-weight:100;
         font-family: "Custom_Baskerville";
@@ -454,7 +396,6 @@ footer hr{
 
 
 
-    /* container */
 
 
     .container{
@@ -462,40 +403,21 @@ footer hr{
     }
 
     .container h2{
-        font-size: 32px;
+        font-size: 36px;
     }
 
-    .our_fleet{
-        padding: 0px;
-        background-color: var(--custom_light_grey);
-        height:fit-content;
-        vertical-align: center;
-    }
-    
-    .fleet_img_container{
-        height: 80px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 16px;
+    .details_container p{
+        font-size: 16px;
     }
 
-    .fleet_img_container img{
-        width: 11%;
-        max-width: 50px;
-    }
-
-    .fleet_element{
-        width: 80%;
-    }
-
-    .fleet_element h3{
-        font-size: 24px;
-    }
-
-    .fleet_element img{
+    .detail_img img{
         width: 100%;
     }
+
+    .detail_quote h6{
+        font-size: 18px;
+    }
+
 
 
 

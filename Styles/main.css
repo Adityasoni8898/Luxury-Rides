@@ -968,7 +968,7 @@ footer hr{
     .nav_link_container{
         position:fixed;
         right: -100%;
-        top: 70px;
+        top: 110px;
         flex-direction: column;
         justify-content: center;
         gap: 12px;
@@ -1023,7 +1023,7 @@ footer hr{
         font-family: "Custom_goldoni";
         color: white;
         font-size: 34px;
-        margin-bottom: 12px;
+        margin-bottom: 17px;
     }
     
     .intro_text h4{
