@@ -82,6 +82,21 @@ button:active{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
+/* Contact_number */
+.contact_number{
+    padding: 10px;
+    background-color: var(--custom_light_grey);
+    justify-content: center;
+    display: flex;
+}
+
+.contact_number p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
 /* nav bar */
 
 .navbar{
@@ -313,6 +328,11 @@ footer hr{
         font-weight:100;
         font-family: "Custom_Baskerville";
         align-content: center;
+    }
+
+
+    .contact_number p{
+        font-size: 16px;
     }
     
     /* nav bar */

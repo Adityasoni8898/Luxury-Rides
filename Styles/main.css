@@ -98,6 +98,21 @@ button>a{
     font-family: "Custom_Baskerville";
 }
 
+
+/* Contact_number */
+.contact_number{
+    padding: 10px;
+    background-color: var(--custom_light_grey);
+    justify-content: center;
+    display: flex;
+}
+
+.contact_number p{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
 /* nav bar */
 
 .navbar{
@@ -211,7 +226,7 @@ button>a{
 
 /* Search */
 
-.search{
+.search form{
     background-color: var(--custom_grey);
     padding: 24px 15% 80px 15%;
     display: flex;
@@ -220,7 +235,7 @@ button>a{
     justify-content: left;
 }
 
-.search *{
+.search form *{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
     padding: 10px 0 10px 22px;
     font-size: 18px;
@@ -228,7 +243,17 @@ button>a{
     height: fit-content;
     width: 300px;
     text-align: left;   
-} */
+} 
+
+.search_btn{
+    background-color: var(--custom_sandal);
+    height: fit-content;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    border: none;
+    filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
+} 
 
 
 /* Our Fleet */
@@ -332,7 +357,7 @@ button>a{
 
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next{
-    padding: 0 15%;
+    padding: 0 3%;
     color: var(--custom_grey);
 }
 
@@ -367,7 +392,7 @@ button>a{
 /* number of deals */
 
 .how_many_deals{
-    margin: 100px 15% 0 15%;
+    margin: 0 15%;
     padding: 30px 200px;
     background-color: var(--custom_grey);
     display: flex;
@@ -585,6 +610,13 @@ button>a{
     filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
 }
 
+.testimonials .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .review_container{
     padding: 50px;
     background-color: white;
@@ -612,10 +644,19 @@ button>a{
     justify-content: center;
 }
 
+.testimonial_car img{
+    border-radius: 12px;
+}
+
 .testimonial_name_img{
     margin-top: 40px;
     display: flex;
     gap: 25px;
+}
+
+.testimonial_name_img img{
+    border-radius: 12px;
+    max-width: 120px;
 }
 
 .testimonial_name{
@@ -628,7 +669,8 @@ button>a{
 }
 
 .text_img p{
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 600;
     max-width: 420px;
 }
 
@@ -706,12 +748,17 @@ footer hr{
         padding: 80px 10% 18px 10%;
     }
 
-    .search{
+    .search form{
         padding: 24px 10% 80px 10%;
     }
 
     .div_title {
         padding: 80px 10%;
+    }
+
+    .swiper .swiper-button-prev,
+    .swiper .swiper-button-next{
+        display: none;
     }
 
     .how_many_deals {
@@ -772,7 +819,7 @@ footer hr{
         max-width: 180px;
     }
 
-    .search *{
+    .search form *{
         width: 300px;
     }
 
@@ -860,6 +907,12 @@ footer hr{
         align-content: center;
     }
     
+
+    .contact_number p{
+        font-size: 16px;
+    }
+
+
     /* nav bar */
     
     .navbar{
@@ -983,7 +1036,7 @@ footer hr{
     
     /* Search */
     
-    .search{
+    .search form{
         background-color: var(--custom_grey);
         padding: 25px 21px;
         display: flex;
@@ -992,7 +1045,7 @@ footer hr{
         justify-content: left;
     }
     
-    .search *{
+    .search form *{
         filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
         padding: 10px 0 10px 16px;
         font-size: 16px;
@@ -1028,11 +1081,6 @@ footer hr{
 
     .swiper{
         margin: 20px 0;
-    }
-
-    .swiper .swiper-button-prev,
-    .swiper .swiper-button-next{
-        display: none;
     }
     
     .book_cars_container{
@@ -1096,13 +1144,13 @@ footer hr{
     .how_many_deals h2{
         font-weight: normal;
         color: white;
-        font-size: 40px;
+        font-size: 34px;
     }
     
     .how_many_deals h4{
         font-weight: normal;
         color: white;
-        font-size: 16px;
+        font-size: 12px;
     }
     
     /* how it works */
@@ -1133,18 +1181,18 @@ footer hr{
     }
     
     .process_step img{
-        height: 72px;
+        height: 60px;
     }
     
     .process_step h4{
-        font-size: 22px;
+        font-size: 20px;
     }
     
     .process_step p{
         width: fit-content;
         font-weight: 600;
         text-align: center;
-        font-size: 14px;
+        font-size: 12px;
     }
     
     /* Our Services */
@@ -1301,8 +1349,11 @@ footer hr{
         padding: 21px;
         display: flex;
         justify-content: center;
+
         filter: drop-shadow(0px 6px 4px rgba(0, 0, 0, 0.25));
     }
+
+
     
     .review_container{
         padding: 20px;

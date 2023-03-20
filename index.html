@@ -15,6 +15,11 @@
     </head>
     <body>
 
+        <div class="contact_number">
+            <p>Call us on +91 9167880007</p>
+        </div>
+
+
         <div class="navbar">
             <img src="Assets/logo.png" alt="logo">
             <div id="nav_link_container" class="nav_link_container">
@@ -41,20 +46,39 @@
                     <h4>Choose from various Luxuries, Exotic & Classic brands</h4>
                 </div>
             </div>
-            <!-- <div class="hero_search">
-                <input type="name" placeholder="Name">
-                <input type="contact" placeholder="Contact">
-                <input type="email" placeholder="Email">
-                <input type="pickup_address" placeholder="Pick Up Address">
-                <button id="Search">Search</button>
-        </div> -->
+
         </div>
         <div class="search">
-            <input type="name" placeholder="Name">
-            <input type="contact" placeholder="Contact">
-            <input type="email" placeholder="Email">
-            <input type="pickup_address" placeholder="Pick Up Address">
-            <button id="Search">Search</button>
+
+            <!-- <form id="wf-form-Car-booking" name="wf-form-Car-booking" data-name="Car booking" redirect="/our-fleet" data-redirect="/our-fleet" method="get" class="form-2" aria-label="Car booking">
+                <div class="div-block-33">
+                    <div class="w-layout-grid grid-2">
+                        <div>
+                            <input type="text" class="text-field-2 w-input" maxlength="256" name="Name" data-name="Name" placeholder="Enter your Name" id="Name-6" required="">
+                        </div>
+                        <div>
+                            <input type="tel" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Enter Phone Number" id="name-2" required="">
+                        </div>
+                        <div>
+                            
+                            <input type="email" class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="Enter your Email Id" id="Email" required="">
+                        </div>
+                        <div>
+                            
+                            <input type="text" class="text-field w-input" maxlength="256" name="location" data-name="location" placeholder="Enter Pick Up Location" id="location" required="">
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="Search" data-wait="Please wait..." class="submit-button w-button">
+            </form> -->
+
+            <form id="form_car_booking" data-name="Car booking" redirect="Pages/our-fleet.html">
+                <input type="name" placeholder="Name" required>
+                <input type="contact" placeholder="Contact" required>
+                <input type="email" placeholder="Email" required>
+                <input type="pickup_address" placeholder="Pick Up Address" required>
+                <input type="submit" redirect="Pages/our-fleet.html" value="Search" id="Search" class="search_btn">
+            </form>
         </div>
 
 
@@ -72,79 +96,7 @@
         </div>
 
 
-        <!-- <div class="book_cars carousel" data-carousel>
-        <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-        <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-        <div data-slides>
 
-            <div class="slide" data-active>
-                <div class="book_cars_container">
-                    <img src="Assets/audi.png" alt="audio_image">
-                    <div class="book_car_name_btn">
-                        <h2>Audi A1 Cabriolet</h2>
-                        <button>Book</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="slide">
-                <div class="book_cars_container">
-                    <img src="Assets/audi.png" alt="audio_image">
-                    <div class="book_car_name_btn">
-                        <h2>Audi A2 Cabriolet</h2>
-                        <button>Book</button>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="slide">
-                <div class="book_cars_container">
-                    <img src="Assets/audi.png" alt="audio_image">
-                    <div class="book_car_name_btn">
-                        <h2>Audi A3 Cabriolet</h2>
-                        <button>Book</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-            
-    </div> -->
-        <!-- <section aria-label="Newest Photos">
-        <div class="carousel" data-carousel>
-          <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
-          <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
-          <ul data-slides>
-            <li class="slide" data-active>
-                <div class="book_cars_container">
-                    <img src="Assets/audi.png" alt="audio_image">
-                    <div class="book_car_name_btn">
-                        <h2>Audi A1 Cabriolet</h2>
-                        <button>Book</button>
-                    </div>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="book_cars_container">
-                    <img src="Assets/audi.png" alt="audio_image">
-                    <div class="book_car_name_btn">
-                        <h2>Audi A2 Cabriolet</h2>
-                        <button>Book</button>
-                    </div>
-                </div>
-            </li>
-            <li class="slide">
-                <div class="book_cars_container">
-                    <img src="Assets/audi.png" alt="audio_image">
-                    <div class="book_car_name_btn">
-                        <h2>Audi A3 Cabriolet</h2>
-                        <button>Book</button>
-                    </div>
-                </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
         <div class="book_cars">
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -218,9 +170,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
 
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
@@ -381,29 +330,107 @@
 
         <h2 class="div_title">Testimonials</h2>
         <div class="testimonials">
-            <div class="review_container">
-                <img src="Assets/quotation_mark.png" alt="quotation_mark"
-                    class="quotation_mark_img">
-                <div class="review">
-                    <div class="text_img">
-                        <p class="text_img_p">The Car are really amazing and the
-                            ride is really comfortable even during monsoon,
-                            would love to work with them in the future</p>
-                        <div class="testimonial_name_img">
-                            <div>
-                                <img src="Assets/testimonial_photo1.png" alt="">
-                            </div>
-                            <div class="testimonial_name">
-                                <h2>Amar Singh</h2>
-                                <h4>Social Media Executive</h4>
+
+
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="review_container">
+                            <img src="Assets/quotation_mark.png" alt="quotation_mark"
+                                class="quotation_mark_img">
+                            <div class="review">
+                                <div class="text_img">
+                                    <p class="text_img_p">The Car are really amazing and the
+                                        ride is really comfortable even during monsoon,
+                                        would love to work with them in the future</p>
+                                    <div class="testimonial_name_img">
+                                        <div>
+                                            <img src="Assets/testimonial_photo1.png" alt="">
+                                        </div>
+                                        <div class="testimonial_name">
+                                            <h2>Amar Singh</h2>
+                                            <h4>Social Media Executive</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial_car">
+                                    <img src="Assets/testimonial_car.png" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial_car">
-                        <img src="Assets/testimonial_car.png" alt="">
+
+
+
+
+                    <div class="swiper-slide">
+                        <div class="review_container">
+                            <img src="Assets/quotation_mark.png" alt="quotation_mark"
+                                class="quotation_mark_img">
+                            <div class="review">
+                                <div class="text_img">
+                                    <p class="text_img_p">I had rented a few times before and been disappointed by the quality. But this time, the car rental company was amazing. 
+                                        They were prompt on delivery & pickup and there is no better feeling than driving one of their cars!</p>
+                                    <div class="testimonial_name_img">
+                                        <div>
+                                            <img src="Assets/sameer2.jpg" alt="">
+                                        </div>
+                                        <div class="testimonial_name">
+                                            <h2>Sameer Hussain</h2>
+                                            <h4>V12</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial_car">
+                                    <img src="Assets/testemonial_2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
+                    <div class="swiper-slide">
+                        <div class="review_container">
+                            <img src="Assets/quotation_mark.png" alt="quotation_mark"
+                                class="quotation_mark_img">
+                            <div class="review">
+                                <div class="text_img">
+                                    <p class="text_img_p">My experience with the Luxury Car rental was incredible. The staff was so friendly and the cars were beautiful! 
+                                        I would really recommend them to anyone looking to rent a car in the near future.</p>
+                                    <div class="testimonial_name_img">
+                                        <div>
+                                            <img src="Assets/amar singh.jpg" alt="">
+                                        </div>
+                                        <div class="testimonial_name">
+                                            <h2>Sanjay Gowda</h2>
+                                            <h4>Designer of Nirvana</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="testimonial_car">
+                                    <img src="Assets/testemonial_3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
             </div>
+
+
+
+
+
         </div>
 
         <footer>
