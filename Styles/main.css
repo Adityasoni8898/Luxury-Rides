@@ -579,11 +579,8 @@ button>a{
 /* Trusted By */
 
 .trusted_by{
-    height: fit-content;
     background-color: var(--custom_light_grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: fit-content;
 }
 
 .trusted_by_container{
@@ -1333,13 +1330,16 @@ footer hr{
     }
     
     .trusted_by_container{
-        gap: 18%;
+        gap: 10%;
         height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .trusted_by_container img{
         width: fit-content;
-        height: 30px;
+        height: 35px;
     }
     
     /* Testimonials */
